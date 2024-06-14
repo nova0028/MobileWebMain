@@ -140,20 +140,5 @@
   });
 </script>
 
-<script>
-  //userAgent 브라우저의 전체적인 정보를 제공
-  //toLowerCase(); 영문자를 소문자로 변환해서 반환
-  //indexOf 찾는문자의 인덱스번호를 반환 하기도 하지만 찾는 문자가 포함되어 있는지 여부를 알아볼때 사용
-  var myAgent=navigator.userAgent.toLowerCase();
-      console.log(myAgent);
-      var mobile=["iphone","ipod","android","blackberry","window ce","nokia","webos","opera mini","sonyericsson","opera mobi","iemobile"];
-      for(var i=0; i<mobile.length; i++){
-          if(myAgent.indexOf(mobile[i]) >=0 ){
-              location.href="http://webd.kr/study/pcmo/mobile_main.html";
-              break;
-          }
-  }
-</script>
-
 </body>
 </html>
