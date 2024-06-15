@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>어뉴 클리닉 의원</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" type="image/x-icon" href="image/sicon.ico">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
@@ -56,7 +55,7 @@
         <div class="sub_menu"> 
           <div class="row1">  
             <a href="#" class="login">로그인</a>
-            <a href="#" class="sign_in">회원가입</a>
+            <a href="#" class="sign_up">회원가입</a>
           </div>
           <ul class="depth1">
             <li>
@@ -196,21 +195,13 @@
       <h3>찾아오시는 길</h3>
       <ul class="map">
         <li>
-          <a href="https://map.kakao.com/?urlX=495446&urlY=1129865&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank">
-          <img width="300" height="200" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=495446&MY=1129865&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>        
-          <div class="hide" style="overflow:hidden;padding:7px 11px;border:1px solid #dfdfdf;border-color:rgba(0,0,0,.1);border-radius:0 0 2px 2px;background-color:#f9f9f9;width:300px;">
-            <strong style="float: left;">
-            <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong>
-            <div style="float: right;position:relative">
-              <a style="font-size:12px;text-decoration:none;float:left;height:14px;padding-top:1px;line-height:15px;color:#000" target="_blank" href="https://map.kakao.com/?urlX=495446&urlY=1129865&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">지도 크게 보기</a>
-            </div>
-          </div>
+          <div id="daumRoughmapContainer1718473601411" class="root_daum_roughmap root_daum_roughmap_landing"></div>
         </li>
         <li>서울 중구 무교로 12 정오빌딩 7층<br>(서울 중구 무교동 21-3)</li>
         <li>*차량 소지시 건물 자체 주차장이 없으므로<br>센터플레이스 혹은 서울파이낸스 센터에<br>주차하고 오시면 가깝습니다.</li>
       </ul>
       <div class="sns">
-        <ul>
+        <!-- <ul>
           <li>
             <a href="#"><img src="image/sns_kakaotalk.png" alt="kakaotalk"></a>
           </li>
@@ -225,7 +216,17 @@
           <li>
             <a href="#"><img src="image/sns_instagram.png" alt="instagram"></a>
           </li>
-        </ul>
+        </ul> -->
+        <div class="sns">
+          <div class="row1">
+            <a href="#"><img src="image/sns_kakaotalk.png" alt="kakaotalk"></a>
+            <a href="#"><img src="image/sns_youtube.png" alt="youtube"></a>
+          </div>
+          <div class="row2">
+            <a href="#"><img src="image/sns_blog.png" alt="naver blog"></a>  
+            <a href="#"><img src="image/sns_instagram.png" alt="instagram"></a>
+          </div>
+        </div>
       </div>
   
     </section>
@@ -364,6 +365,17 @@
       clickable: true,
     },
   });
+</script>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1718473601411",
+		"key" : "2jouc",
+		"mapWidth" : "300",
+		"mapHeight" : "200"
+	}).render();
 </script>
 
 
