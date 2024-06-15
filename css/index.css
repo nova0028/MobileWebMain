@@ -401,11 +401,11 @@ nav {
 #section3 .sns {
   background-color: #fff;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 #section3 .sns ul {display: flex;}
 #section3 .sns img {
-  width:16rem;
+  width:15rem;
   animation: bounce-ani 1s ease-in infinite alternate;
 }
 #section3 .sns .row1 a:nth-of-type(2) img {animation-duration: 2s;}
