@@ -3,13 +3,14 @@
 body {
   font-size: 1.6rem;
   font-family: Nanum Square B, sans-serif;
-  padding-top: 12rem;
+  padding-top: 10.5rem;
   color: #333;
 }
 h2 {
   text-transform: capitalize;
   font-size: 3rem;
 }
+h3 {font-size: 2rem;}
 #section0, #section1, #section2, #section3, footer {
   display: flex;
   flex-flow: column;
@@ -20,9 +21,8 @@ h2 {
 /* ////////// Header ///////// */
 nav {
   width: 100%;
-  height: 12rem;
-  background: linear-gradient(to bottom, #d8bab4, #7d706c, #463e3c);
-  background-color: li;
+  height: 10.5rem;
+  background: linear-gradient(to bottom, #e4cac5, #8c7e7a, #5e5351);
   color: #fff;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ nav {
 .nav_top1 {
   display: flex;
   justify-content: left;
-  height: 5rem;
+  height: 3.8rem;
 }
 .nav_top1 .mob_btn {
   display: block;
@@ -64,7 +64,7 @@ nav {
 	left: 50%;
 	transform: translate(-50%, -25%);
 }
-.nav_top1 .top_logo img{width: 17rem;}
+.nav_top1 .top_logo img{width: 16rem;}
 .nav_top2 {
   height: 4.5rem;
   margin-top: 0.7rem;
@@ -72,7 +72,6 @@ nav {
 .nav_top2 {
   font-family: GmS_R, sans-serif;
 	color: #fff;
-
 }
 .nav_top2 ul>li>a:hover {color: #FFDBD3;}
 
@@ -91,7 +90,6 @@ nav {
 .subNav .inner{
   padding: 2rem;
 }
-
 .sub_menu .depth1>li{
   padding: 1rem 2rem;
 }
@@ -202,7 +200,6 @@ nav {
 }
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,17 +248,15 @@ nav {
   bottom: 0;
   right: 15%;
 }
-@keyframes rotate-ani {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /* ////////// section1 ///////// */
 #section1 {
   width: 100%;
   height: 80rem;
   background-color: #fafafa;
+  background: linear-gradient(-45deg, #fff, #cceafc, #fcb7a8);
+  background-size: 200% 200%;
+  animation: gradient-ani 3s ease infinite alternate;
   color:#33ADB6;
 }
 #section1 span {
@@ -295,29 +290,18 @@ nav {
   display: block;
   font-size: 2rem;
   color: #fff;
-  margin: 3rem 0 6rem 0;
+  margin: 3rem 0 5.5rem 0;
 }
 #section2 .doctor {
   font-family: "Nanum Myeongjo", serif;
   font-weight: 600;
-  background: linear-gradient(45deg, #fff, #cceafc, #fcb7a8);
+  background: linear-gradient(45deg, #fff, #e6f5ff, #ffe2dc);
   background-size: 300% 150%;
   border: 0.3rem solid #33ADB6;
   border-radius: 2rem;
   box-shadow: 0.5rem 0.5rem 0.8rem #000;
-  padding: 6rem 5.5rem;
-  animation: gradient-ani 4s ease infinite;
-}
-@keyframes gradient-ani {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  padding: 5rem 5.5rem;
+  animation: gradient-ani 4s ease infinite alternate;
 }
 #section2 .doctor img {
   width: 20rem;
@@ -327,11 +311,11 @@ nav {
   font-size: 1.5rem;
   text-align: right;
   color: #555;
+  margin-bottom: 4rem;
 }
 #section2 .doctor p {
   font-size: 1.8rem;
   color: #222;
-  margin-top: 4rem;
   text-align: center;
   line-height: 4rem;
   position: relative;
@@ -355,8 +339,6 @@ nav {
 }
 
 #section2 .info {
-  /* background-color: #f8f7f3;
-  background-color: #fff; */
   color: #fff;
   border-radius: 2rem;
   padding: 6rem 4rem;
@@ -375,7 +357,7 @@ nav {
 #section2 .info li:first-of-type {color: #ffc8bb;}
 #section2 .medal{
   width: 26rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 /* ////////// section3 ///////// */
@@ -406,34 +388,22 @@ nav {
 #section3 .sns ul {display: flex;}
 #section3 .sns img {
   width:12rem;
-  animation: bounce-ani 1s ease-in infinite alternate;
+  animation: bounce-ani 1.2s ease-in-out infinite alternate;
 }
 #section3 .sns .row1 a:nth-of-type(2) img {animation-duration: 2s;}
-#section3 .sns .row2 a:nth-of-type(1) img {animation-duration: 1.5s;}
-#section3 .sns .row2 a:nth-of-type(2) img {animation-duration: 1s;}
-
-@keyframes bounce-ani {
-  0% {
-    transform: translateY(0rem);
-  }
-  100% {
-    transform: translateY(-0.5rem);
-  }
-  0% {
-    transform: translateY(0rem);
-  }
-}
+#section3 .sns .row2 a:nth-of-type(1) img {animation-duration: 1.6s;}
+#section3 .sns .row2 a:nth-of-type(2) img {animation-duration: 2.3s;}
 
 /* ////////// footer ///////// */
 footer {
-  height: 70rem;
+  height: 60rem;
   background-color: #d3d3cf;
   background-color: #222;
   background-color: #111;
   color: #fff;
   font-size: 1.4rem;
-  line-height: 3rem;
-  padding-bottom: 7rem;
+  line-height: 2.3rem;
+  padding-bottom: 7.5rem;
 }
 footer .f1 ul {
   display: flex;
@@ -454,11 +424,11 @@ footer .f1 li+li:before {
 footer h2 {
   color: #ffc8bb;
   font-size: 2rem;
-  margin: 6rem 0 3rem 0;
+  margin: 5rem 0 2rem 0;
 }
+footer .f2 div,
 footer .f2 ul {display: flex;}
-footer .f2 ul:first-of-type>ul {display: flex;}
-footer .f2 ul:first-of-type ul+ul {padding-left: 2rem;}
+footer .f2 div ul+ul {padding-left: 2rem;}
 footer .f2 ul li:first-of-type{
   color: #ffc8bb;
   padding-right: 1rem;
@@ -469,13 +439,12 @@ footer address {
   text-align: center;
   margin: 3rem;
 }
-footer img {width: 20rem;}
+footer img {width: 18rem;}
 footer .footPC {
   margin-top: 3rem;
   padding: 0.5rem 2rem;
   border-radius: 3rem;
   background-color: #555;
-
 }
 
 /* _______footer 고정 퀵메뉴 */
@@ -491,13 +460,12 @@ footer .footPC {
 .footTel ul{display: flex;}
 .footTel ul li{		
 	text-align:center;
-	line-height:50px;
+	line-height: 5rem;
 	width:50%;
-	height:5erm;
+	height: 5rem;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-  
+	align-items: center;  
 }
 .footTel ul li a{
 	color:#fff;
@@ -511,3 +479,37 @@ footer .footPC {
 }
 .footTel ul li:first-child{background:#2CBDC7;}
 .footTel ul li:last-child{background:#22949B;}
+
+/* keyframes Animation */
+@keyframes rotate-ani {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-ani {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bounce-ani {
+  0% {
+    transform: translateY(0rem);
+  }
+  75% {
+    transform: translateY(0.1rem);
+  }
+  100% {
+    transform: translateY(-0.4rem);
+  }
+  0% {
+    transform: translateY(0rem);
+  }
+}

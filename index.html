@@ -35,20 +35,8 @@
           </div>
         </div>
       </div>
-
-      <!-- ///////// 전체메뉴 클릭시 나오는 메뉴 -->
-      <!-- <div class="gnb">
-        <ul class="gnb_list">
-          <li><a href="#">어뉴소개</a></li>
-          <li><a href="#">피부레이저</a></li>
-          <li><a href="#">쁘띠성형</a></li>
-          <li><a href="#">탈모클리닉</a></li>
-          <li><a href="#">피부질환</a></li>
-          <li><a href="#">커뮤니티</a></li>
-        </ul>
-      </div>
-      <div class="back"></div> -->
     </nav>
+    
     <div class="subNav">
       <div class="inner">
           <!-- 모바일메뉴 start-->
@@ -201,22 +189,6 @@
         <li>*차량 소지시 건물 자체 주차장이 없으므로<br>센터플레이스 혹은 서울파이낸스 센터에<br>주차하고 오시면 가깝습니다.</li>
       </ul>
       <div class="sns">
-        <!-- <ul>
-          <li>
-            <a href="#"><img src="image/sns_kakaotalk.png" alt="kakaotalk"></a>
-          </li>
-          <li>
-            <a href="#"><img src="image/sns_youtube.png" alt="youtube"></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#"><img src="image/sns_blog.png" alt="naver blog"></a>
-          </li>
-          <li>
-            <a href="#"><img src="image/sns_instagram.png" alt="instagram"></a>
-          </li>
-        </ul> -->
         <div class="sns">
           <div class="row1">
             <a href="#"><img src="image/sns_kakaotalk.png" alt="kakaotalk"></a>
@@ -227,8 +199,7 @@
             <a href="#"><img src="image/sns_instagram.png" alt="instagram"></a>
           </div>
         </div>
-      </div>
-  
+      </div>  
     </section>
   </div>
 
@@ -242,7 +213,7 @@
     </div>
     <h2>어뉴의원</h2>
     <div class="f2">
-      <ul>
+      <div>
         <ul>
           <li>대표</li>
           <li>시보경</li>
@@ -251,7 +222,7 @@
           <li>사업자등록번호</li>
           <li>705-29-00479</li>
         </ul>
-      </ul>
+      </div>
       <ul>
         <li>TEL</li>
         <li>02-755-1010</li>
@@ -285,11 +256,6 @@
   </footer>
 
 
-
-
-
-
-
   <!-- Script Source -->
 	<script src="js/jquery-3.7.0.min.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
@@ -297,18 +263,6 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-	<!-- Swiper JS CDN-->
-  <!-- <script>
-    var swiper = new Swiper(".mySwiper1", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script> -->
 
   <script>
     var swiper = new Swiper(".mySwiper1", {
@@ -354,31 +308,29 @@
     });
   </script>
 
-<script>
-  var swiper = new Swiper(".mySwiper3", {
-    slidesPerView: 2,
-    centeredSlides: true,
-    spaceBetween: 300,
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
+  <script>
+    var swiper = new Swiper(".mySwiper3", {
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 300,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <!-- 카카오맵 지도 -->
+  <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1718473601411",
-		"key" : "2jouc",
-		"mapWidth" : "300",
-		"mapHeight" : "200"
-	}).render();
-</script>
-
-
-
+  <script>
+    new daum.roughmap.Lander({
+      "timestamp" : "1718473601411",
+      "key" : "2jouc",
+      "mapWidth" : "300",
+      "mapHeight" : "200"
+    }).render();
+  </script>
 </body>
 </html>
