@@ -101,8 +101,9 @@ nav {
   cursor: pointer;
 }
 .sub_menu .depth2{
-  background-color: #f6f6f6;
+  background-color: #333;
   border-radius: 2rem;
+  border: 1px solid #555;
   display: none;
   padding: 1.5rem;
   margin-top: 2rem;
@@ -111,7 +112,7 @@ nav {
   font-size: 1.4rem;
   padding: 0.5rem;
   text-align: center;
-  color: #333;
+  color: #fff;
   line-height: 1.6;
 }
 .sub_menu .depth1>li>span:before,
@@ -120,7 +121,7 @@ nav {
   content: '';
   width: 1.3rem;
   height: .1rem;
-  background-color: rgb(138, 138, 138);
+  background-color: #8a8a8a;
   position: absolute;
   right: 0;
   top: 49%;
@@ -147,16 +148,16 @@ nav {
 }
 .login{
   display: inline-block;
-  line-height: 3.7rem;
   padding: 0 1.2rem;
   position: relative;
   color: #fff;
 }
 .sign_up{
+  display: inline-block;
   opacity: 0.5;
   position: relative;
   padding: 0 1rem;
-  
+  color: #fff;
 }
 .sign_up:before{
   content: '';
@@ -397,8 +398,6 @@ nav {
 /* ////////// footer ///////// */
 footer {
   height: 60rem;
-  background-color: #d3d3cf;
-  background-color: #222;
   background-color: #111;
   color: #fff;
   font-size: 1.4rem;
@@ -440,12 +439,6 @@ footer address {
   margin: 3rem;
 }
 footer img {width: 18rem;}
-footer .footPC {
-  margin-top: 3rem;
-  padding: 0.5rem 2rem;
-  border-radius: 3rem;
-  background-color: #555;
-}
 
 /* _______footer 고정 퀵메뉴 */
 .mOpen .footerTel {display: none;}
